@@ -2,7 +2,7 @@ package ApiAutos.Model;
 
 
 public class Auto {
-    
+
     private  Marca marca;
     private  String modelo;
     private double kilometros;
