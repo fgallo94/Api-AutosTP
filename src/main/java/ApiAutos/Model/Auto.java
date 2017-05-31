@@ -1,6 +1,7 @@
 package ApiAutos.Model;
 
 
+
 public class Auto {
 
     private  Marca marca;
@@ -36,13 +37,16 @@ public class Auto {
     @Override
     public String toString() {
         return "Auto{" +
-                "marca='" + marca.toString() + '\'' +
+                "marca='" + getMarca().toString() + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", kilometros=" + kilometros +
                 ", patente='" + patente + '\'' +
                 ", anio=" + anio +
                 '}';
     }
+
+
+
 
     public Marca getMarca() {
         return marca;
