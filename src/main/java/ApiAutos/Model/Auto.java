@@ -3,14 +3,18 @@ package ApiAutos.Model;
 
 
 public class Auto {
-
+    private static int byid;
+    private int id;
     private  Marca marca;
     private  String modelo;
     private double kilometros;
     private String patente;
     private int anio;
 
+
+
     public Auto(){
+        id=byid++;
         marca=new Marca();
         modelo="";
         kilometros=0;
@@ -19,6 +23,7 @@ public class Auto {
     }
 
     public Auto(Auto a){
+        this.id=a.id;
         this.marca=a.marca;
         this.modelo=a.modelo;
         this.kilometros=a.kilometros;
@@ -26,7 +31,8 @@ public class Auto {
         this.anio=a.anio;
     }
 
-    public Auto(Marca marca, String modelo, double kilometros,String patente, int anio){
+    public Auto( Marca marca, String modelo, double kilometros,String patente, int anio){
+        this.id=byid++;
         this.marca=marca;
         this.modelo=modelo;
         this.kilometros=kilometros;
@@ -45,11 +51,16 @@ public class Auto {
                 '}';
     }
 
-
-
-
     public Marca getMarca() {
         return marca;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setMarca(Marca marca) {
