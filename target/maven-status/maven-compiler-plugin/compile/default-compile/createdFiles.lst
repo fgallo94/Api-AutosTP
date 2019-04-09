@@ -1,8 +1,0 @@
-ApiAutos/Response/AutoWrapper.class
-ApiAutos/Persistencia.class
-ApiAutos/Model/Auto.class
-ApiAutos/App.class
-ApiAutos/Request/AutoRequest.class
-ApiAutos/Request/MarcaRequest.class
-ApiAutos/AutoControladora.class
-ApiAutos/Model/Marca.class
